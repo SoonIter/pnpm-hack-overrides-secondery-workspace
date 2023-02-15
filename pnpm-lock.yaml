@@ -1,0 +1,34 @@
+lockfileVersion: 5.4
+
+overrides:
+  react>loose-envify: workspace:*
+
+importers:
+
+  .:
+    specifiers: {}
+
+  apps/web:
+    specifiers:
+      react: 18.2.0
+    dependencies:
+      react: 18.2.0
+
+  packages/loose-envify:
+    specifiers:
+      js-tokens: '*'
+    dependencies:
+      js-tokens: 4.0.0
+
+packages:
+
+  /js-tokens/4.0.0:
+    resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
+    dev: false
+
+  /react/18.2.0:
+    resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
+    engines: {node: '>=0.10.0'}
+    dependencies:
+      loose-envify: link:packages/loose-envify
+    dev: false
